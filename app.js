@@ -7,8 +7,18 @@ fs = require("fs")
 config = require("./config.json")
 client.config = config;
 
+var cron = require('node-cron');
+
+
 client.on("ready", function() {
   console.log("Sverker startade")
+
+  cron.schedule('10 8 * * 1,2,3,5', () => {
+    client.channels.get("784328462155907072").send("@everyone Rita era fiskar!")
+  });
+  cron.schedule('10 10 * * 4', () => {
+    client.channels.get("784328462155907072").send("@everyone Rita era fiskar!")
+  });
 })
 
 client.on("message", message => {
