@@ -25,15 +25,19 @@ client.on("message", message => {
   if(message.author.bot) return;
 
   var msg = message.toString().toLowerCase()
-  if(["swag","cool"].some(v => msg.includes(v))) {
+  if(["sverker", "kul", "le", "smile", "glad", ":)"].some(v => msg.includes(v))) {
+    message.react("768162328084480041")
+  }
+
+  if(["swag","cool", "B)"].some(v => msg.includes(v))) {
     message.react("768163480300814397")
   }
 
-  if(["love","kärlek","älska","gilla"].some(v => msg.includes(v))) {
+  if(["love","kärlek","älska","gilla", "<3"].some(v => msg.includes(v))) {
     message.react("768163144370618408")
   }
 
-  if(["ledsen","tråk","sad","inte bra", "vill inte", "gillar inte", "tycker inte om", "hatar", "inte roligt"].some(v => msg.includes(v))) {
+  if(["ledsen","tråk","sad","inte bra", "vill inte", "gillar inte", "tycker inte om", "hatar", "inte roligt", ":("].some(v => msg.includes(v))) {
     message.react("768393037544947713")
   }
 
