@@ -14,10 +14,10 @@ client.on("ready", function() {
   console.log("Sverker startade")
 
   cron.schedule('10 8 * * 1,2,3,5', () => {
-    client.channels.get("784328462155907072").send("@everyone Rita era fiskar!")
+    client.channels.cache.get("784328462155907072").send("@everyone Rita era fiskar!")
   });
   cron.schedule('10 10 * * 4', () => {
-    client.channels.get("784328462155907072").send("@everyone Rita era fiskar!")
+    client.channels.cache.get("784328462155907072").send("@everyone Rita era fiskar!")
   });
 })
 
@@ -52,8 +52,6 @@ client.on("message", message => {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args, fs, config);
   }} catch (err) { console.error(err) }
-
-
 })
 
 client.login(config.token);
