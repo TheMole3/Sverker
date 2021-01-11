@@ -25,7 +25,7 @@ client.on("message", message => {
   if(message.author.bot) return;
 
   var msg = message.toString().toLowerCase()
-  if(["sverker", "kul", "le", "smile", "glad", ":)"].some(v => msg.includes(v))) {
+  if(["sverker", "kul", " le ", "smile", "glad", ":)"].some(v => msg.includes(v))) {
     message.react("768162328084480041")
   }
 
