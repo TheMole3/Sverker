@@ -1,48 +1,28 @@
-const Discord = require("discord.js");
-
-client = new Discord.Client();
-fs = require("fs")
-//const config = require("./config.json");
-// We also need to make sure we're attaching the config to the CLIENT so it's accessible everywhere!
-config = require("./config.json")
-client.config = config;
-
-var cron = require('node-cron');
+const Discord = require("discord.js"); // Import Discord.js library
+const client = new Discord.Client(); // Create new bot client
+const fs = require("fs") // Import file reading library
+const cron = require('node-cron');
+const config = require("./config.json") // Import config file
+client.config = config; // Add config to discord client object
 
 
-client.on("ready", function() {
-  console.log("Sverker startade")
+client.on("ready", function() { // When discord bot is ready
+  console.log(client.user.tag + " started");
 
-  cron.schedule('10 8 * * 1,2,3,5', () => {
-    client.channels.cache.get("784328462155907072").send("@everyone Rita era fiskar!")
+  cron.schedule('10 8 * * 1,2,3,5', () => { // Schedule fish message for 8:10 mon-wed and fri
+    client.channels.cache.get("784328462155907072").send("@everyone Rita era fiskar!");
   });
-  cron.schedule('10 10 * * 4', () => {
-    client.channels.cache.get("784328462155907072").send("@everyone Rita era fiskar!")
+  cron.schedule('10 10 * * 4', () => { // Schedule fish message for 10:10 thu
+    client.channels.cache.get("784328462155907072").send("@everyone Rita era fiskar!");
   });
 })
 
-client.on("message", message => {
-  if(message.author.bot) return;
+client.on("message", message => { // When discord client gets a message
+  if(message.author.bot) return; // If the authro of the message is a bot, do nothing
+  require(`./events/reactions.js`).run(message); // Start the reaction script
 
-  var msg = message.toString().toLowerCase()
-  if(["sverker", "kul", " le ", "smile", "glad", ":)"].some(v => msg.includes(v))) {
-    message.react("768162328084480041")
-  }
-
-  if(["swag","cool", "B)"].some(v => msg.includes(v))) {
-    message.react("768163480300814397")
-  }
-
-  if(["love","kärlek","älska","gilla", "<3"].some(v => msg.includes(v))) {
-    message.react("768163144370618408")
-  }
-
-  if(["ledsen","tråk","sad","inte bra", "vill inte", "gillar inte", "tycker inte om", "hatar", "inte roligt", ":("].some(v => msg.includes(v))) {
-    message.react("768393037544947713")
-  }
-
-  var prefix = '<@!' + client.user.id + '>'
-  if(message.content.indexOf(prefix) !== 0) return;
+  var prefix = '<@!' + client.user.id + '>'; // Set the command prefix of the bot @Sverker
+  if(message.content.indexOf(prefix) !== 0) return; // If the message does not start with the prefix, return
   // Define args
   var args;
   args = message.content.slice(prefix.length).trim().split(/ +/g);
@@ -54,4 +34,4 @@ client.on("message", message => {
   }} catch (err) { console.error(err) }
 })
 
-client.login(config.token);
+client.login(config.token); // Login the bot with the token specified in config
