@@ -4,7 +4,7 @@ var reactions = [ // Define reaction and triggers
     reaction: "768162328084480041"
   },
   {
-    triggers: ["swag","cool", "B)"],
+    triggers: ["swag","cool", "b)"],
     reaction: "768163480300814397"
   },
   {
