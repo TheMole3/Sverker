@@ -12,7 +12,7 @@ var reactions = [ // Define reaction and triggers
     reaction: "768163144370618408"
   },
   {
-    triggers: ["ledsen","tråk","sad","inte bra", "vill inte", "gillar inte", "tycker inte om", "hatar", "inte roligt", ":("],
+    triggers: ["ledsen","tråk","sad","inte bra", "vill inte", "gillar inte", "tycker inte om", "hatar", "inte roligt", ":(", "gråta"],
     reaction: "768393037544947713"
   }
 ]
