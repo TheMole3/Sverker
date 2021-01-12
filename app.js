@@ -18,7 +18,7 @@ client.on("ready", function() { // When discord bot is ready
 })
 
 client.on("message", message => { // When discord client gets a message
-  if(message.author.bot) return; // If the authro of the message is a bot, do nothing
+  if(message.author.bot) return; // If the author of the message is a bot, do nothing
   require(`./events/reactions.js`).run(message); // Start the reaction script
 
   var prefix = '<@!' + client.user.id + '>'; // Set the command prefix of the bot @Sverker
