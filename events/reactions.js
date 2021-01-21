@@ -17,31 +17,31 @@ var reactions = [ // Define reaction and triggers
   },
   {
     triggers: ["hampus", "teknik", "cad"],
-    reaction: "801771174186319902"
+    reaction: "801379215864889344"
   },
   {
     triggers: ["lin", "crash", "krashc", "krach", "krasch", "krash"],
-    reaction: "801770591543623690"
+    reaction: "800724990957453332"
   },
   {
     triggers: ["tommy", "mat", "lunch"],
-    reaction: "801770591543623690"
+    reaction: "768801484799868928"
   },
   {
     triggers: ["benny", "verkstad", "prod"],
-    reaction: "801771174186319902"
+    reaction: "768455727122612295"
   },
   {
     triggers: ["pia", "mat", "lunch"],
-    reaction: "801771174186319902"
+    reaction: "768801484698550282"
   },
   {
     triggers: ["jesper", "fysik", "matte"],
-    reaction: "801770591543623690"
+    reaction: "768803859920584704"
   },
   {
-    triggers: ["vincent", "instagram"],
-    reaction: "801771174186319902"
+    triggers: ["vincent", "viktor", "instagram"],
+    reaction: "768801484459999264"
   }
 ]
 
