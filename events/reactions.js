@@ -20,7 +20,7 @@ var reactions = [ // Define reaction and triggers
     reaction: "801379215864889344"
   },
   {
-    triggers: ["lin", "crash", "krashc", "krach", "krasch", "krash"],
+    triggers: ["lin", "crash", "krashc", "krach", "krasch", "krash", "kras", "krasc"],
     reaction: "800724990957453332"
   },
   {
