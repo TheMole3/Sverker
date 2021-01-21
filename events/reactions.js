@@ -14,6 +14,34 @@ var reactions = [ // Define reaction and triggers
   {
     triggers: ["ledsen","tråk","sad","inte bra", "vill inte", "gillar inte", "tycker inte om", "hatar", "inte roligt", ":(", "gråta"],
     reaction: "768393037544947713"
+  },
+  {
+    triggers: ["hampus", "teknik", "cad"],
+    reaction: "801771174186319902"
+  },
+  {
+    triggers: ["lin", "crash", "krashc", "krach", "krasch", "krash"],
+    reaction: "801770591543623690"
+  },
+  {
+    triggers: ["tommy", "mat", "lunch"],
+    reaction: "801770591543623690"
+  },
+  {
+    triggers: ["benny", "verkstad", "prod"],
+    reaction: "801771174186319902"
+  },
+  {
+    triggers: ["pia", "mat", "lunch"],
+    reaction: "801771174186319902"
+  },
+  {
+    triggers: ["jesper", "fysik", "matte"],
+    reaction: "801770591543623690"
+  },
+  {
+    triggers: ["vincent", "instagram"],
+    reaction: "801771174186319902"
   }
 ]
 
