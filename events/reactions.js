@@ -20,7 +20,7 @@ var reactions = [ // Define reaction and triggers
     reaction: "801379215864889344"
   },
   {
-    triggers: ["lin", "crash", "krashc", "krach", "krasch", "krash", "kras", "krasc", "je lim"],
+    triggers: ["cnc", "lin", "crash", "krashc", "krach", "krasch", "krash", "kras", "krasc", "je lim"],
     reaction: "800724990957453332"
   },
   {
@@ -46,6 +46,23 @@ var reactions = [ // Define reaction and triggers
   {
     triggers: ["cng", "curt", "nicolin", "gymnasiet", "bäst"],
     reaction: "768102987285135400"
+  },
+  {
+    triggers: ["raymond", "ramond", "programmering", "3d", "ryss", "rysk", "spel"],
+    reaction: "839403988659077120"
+  },
+  {
+    triggers: ["popham", "david", "cool", "stilig"],
+    reaction: "810942253664174090"
+  }, {
+    triggers: ["gusse", "gustav", "tråkig", "inte rolig", "buzzkill", "mentor"],
+    reaction: "810940404756512798"
+  }, {
+    triggers: ["emil", "idrott", "lat"],
+    reaction: "810941556416577586"
+  }, {
+    triggers: ["danira", "mentor", "so", "samhäll"],
+    reaction: "810944075317641237"
   }
 ]
 
