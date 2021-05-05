@@ -61,7 +61,7 @@ var reactions = [ // Define reaction and triggers
     triggers: ["emil", "idrott", "lat"],
     reaction: "810941556416577586"
   }, {
-    triggers: ["danira", "mentor", "so", "samhäll"],
+    triggers: ["danira", "mentor", "samhäll"],
     reaction: "810944075317641237"
   }
 ]
