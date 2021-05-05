@@ -5,7 +5,6 @@ const cron = require('node-cron');
 const config = require("./config.json") // Import config file
 client.config = config; // Add config to discord client object
 
-require("./web/web.js")
 /*client.on("ready", function() { // When discord bot is ready
   console.log(client.user.tag + " started");
 
